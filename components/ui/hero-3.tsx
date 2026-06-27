@@ -117,16 +117,15 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
       </div>
 
       {/* Marquee strip — occupies the bottom ~40% of the viewport */}
-      <div className="flex-[2] min-h-0 w-full overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)]">
+      <div className="flex-[2] min-h-0 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
         <motion.div
-          className="flex gap-4 items-center h-full"
-          animate={{
-            x: ["-100%", "0%"],
-            transition: {
-              ease: "linear",
-              duration: 40,
-              repeat: Infinity,
-            },
+          className="flex gap-6 items-center h-full w-max"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            ease: "linear",
+            duration: 22,
+            repeat: Infinity,
+            repeatType: "loop",
           }}
         >
           {duplicatedImages.map((src, index) => (

@@ -3,12 +3,14 @@ import { AnimatedMarqueeHero } from "@/components/ui/hero-3";
 import { Feature108 } from "@/components/blocks/shadcnblocks-com-feature108";
 import { Pricing } from "@/components/blocks/pricing";
 
-// Real portfolio work from behance.net/d0cke — replace with individual thumbnail exports when available
+// Real portfolio covers from behance.net/d0cke — swap in individual thumbnail exports when ready
 const THUMBNAIL_IMAGES = [
   "https://mir-s3-cdn-cf.behance.net/projects/808/b8579f197498191.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
   "https://mir-s3-cdn-cf.behance.net/projects/808/90022b193645233.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
   "https://mir-s3-cdn-cf.behance.net/projects/808/f39cf2193645039.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
   "https://mir-s3-cdn-cf.behance.net/projects/808/1ecb90197275609.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
+  "https://mir-s3-cdn-cf.behance.net/projects/808/b8579f197498191.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
+  "https://mir-s3-cdn-cf.behance.net/projects/808/90022b193645233.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
 ];
 
 const PRICING_PLANS = [
