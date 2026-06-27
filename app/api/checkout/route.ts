@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 type PlanId = "single" | "pro" | "bulk";
 type Billing = "standard" | "bundle";
 
@@ -46,6 +44,8 @@ const PLANS: Record<PlanId, Record<Billing, { amount: number; label: string; des
 };
 
 export async function POST(req: NextRequest) {
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+
   const body = await req.json() as { planId: PlanId; billing: Billing };
   const { planId, billing } = body;
 
