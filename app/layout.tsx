@@ -13,9 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VREN — High-CTR Thumbnail Design",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? "https://vren.store"),
+  title: "VREN — High-CTR Gaming Thumbnail Design",
   description:
-    "3 years of algorithm-first thumbnail design for CS2, Minecraft, and Roblox by docke. Built around the algorithm, not just aesthetics.",
+    "Algorithm-first thumbnail design for CS2, Minecraft & Roblox by docke. Gaming channels average 3–5% CTR — VREN thumbnails target 7%+. Starting at $7.",
+  openGraph: {
+    title: "VREN — High-CTR Gaming Thumbnail Design",
+    description:
+      "Algorithm-first thumbnail design for CS2, Minecraft & Roblox. Gaming channels average 3–5% CTR — VREN thumbnails target 7%+. Starting at $7.",
+    url: "https://vren.store",
+    siteName: "VREN",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "VREN — High-CTR Gaming Thumbnail Design",
+    description:
+      "Algorithm-first thumbnail design for CS2, Minecraft & Roblox by docke. Starting at $7.",
+  },
 };
 
 export default function RootLayout({
